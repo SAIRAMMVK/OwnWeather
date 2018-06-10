@@ -36,7 +36,7 @@ p{
 }
 .bottom_division{
 	display:inline-flex;
-	border:1px solid red;
+	/* border:1px solid red; */
 	margin:auto;
     position:relative;
     width:100%;
@@ -49,13 +49,14 @@ p{
     padding: 5px;
 }
 .inner_contents{
-		border:1px solid green;
+		/* border:1px solid green; */
         height:58px;
         font-style: oblique;
         font-weight: bold;
 }
 .inner:hover{
-    background-color: yellow;
+    background-color: lightcyan;
+    box-shadow: 10px 10px 5px 5px #888888;
 }
 .hide-result{
     display: none;
