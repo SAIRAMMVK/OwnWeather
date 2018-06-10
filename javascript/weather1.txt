@@ -1,7 +1,5 @@
 var temp_from_data, fahrenheit_temperature,celsius_temperature,wind,convert_wind;
 
-/* TO ENSURE ONLY CHARACTERS ARE BEING ENTERED */
-
 function checkString() 
 {    
     var cityInput = document.getElementById("cityName").value;
@@ -33,9 +31,6 @@ function convertC()
     $("#windspeed").html("Wind Speed:"+convert_wind+"kmph");
 
 }
-
-/* TO SET THE VALUES OF FIRST THREE DIVISIONS*/
-
 
 $("#btn").click(()=>{
     const cityname = $("#cityName").val();

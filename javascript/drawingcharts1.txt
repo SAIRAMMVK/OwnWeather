@@ -1,4 +1,4 @@
-/* GRAPH FOR 5 DAY FORECAST TEMPERATURE */
+﻿/* GRAPH FOR 5 DAY FORECAST TEMPERATURE */
 
 function drawChart(m,n){
     const city = $("#cityName").val();
@@ -10,11 +10,10 @@ function drawChart(m,n){
         success: (data)=>{
             console.log(data);
             currentDate = data.list.map((ele) => moment(ele.dt * 1000).format('dddd,h a'));
-            currentDays = currentDate.splice(m,n);
             currentTemperature = data.list.map(ele => Math.round(ele.main.temp - 273));
             currentTemp = currentTemperature.splice(m,n);
             $("#current_temperature").html(currentTemp[m]);
-            plotChart(currentTemp, currentDays);
+            plotChart(currentTemp, currentDate);
                     
         },
         error : (data)=>{
