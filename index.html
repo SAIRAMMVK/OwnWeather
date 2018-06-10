@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/windbarb.js"></script>
+</head>
+<body>
+    <header class="text-center">
+        <h1>GOOGLE WEATHER APPLICATION</h1>
+    </header>
+    <div class="container">
+        <div class="form-group">
+            <label for="cityName">Enter City Name:</label>
+            <input type="text" onkeypress="checkString()" class="form-control" id="cityName"/>
+        </div>
+        <button type="button" id="btn" class="btn btn-info" disabled>Get Weather Report</button>
+    </div>
+    <div class="second-container hide-result" id="one">
+            <ul>
+                <li id="city"></li>
+                <li id="timestamp"></li>
+                <li id="weather_description"></li>
+            </ul>
+    </div>
+    <div class="container">
+        <div class="Temperature hide-result" id="two">
+
+            <span class="alignments">
+                <img  id="tempicon" alt="image"/>
+                <p id="current_temperature"></p>
+                <sup>
+                    <span onclick="convertC()" role="button">°C</span>
+                    <span role="button" onclick="convertF()">|°F</span>
+                </sup>
+            </span>
+
+        </div>
+        <div class="contents">
+            <ul>
+                <li id="humidity"></li>
+                <li id="pressure"></li>
+                <li id="windspeed"></li>
+            </ul>
+            <button type="button" id="windbtn" class="btn btn-info">WindSpeed</button>
+            <button type="button" id="tempbtn" class="btn btn-info">Temperature</button>
+        </div>
+        <div id="chart-container" id="three">
+
+        </div>
+        <div class="bottom_division hide-result " id="four">
+            <div class="inner" id="1">
+                        <div class="inner_contents" id="11">
+                        </div>
+                        <img class="inner_contents" id="21"/>
+                        <div class="inner_contents" id="31">
+                        </div>
+            </div>
+            <div class="inner" id="2">
+                        <div class="inner_contents" id="12">
+                        </div>
+                        <img class="inner_contents" id="22"/>
+                        <div class="inner_contents" id="32">
+                        </div>
+            </div>
+            <div class="inner" id="3">
+                        <div class="inner_contents" id="13">
+                        </div>
+                        <img class="inner_contents" id="23"/>
+                        <div class="inner_contents" id="33">
+                        </div>
+            </div>
+            <div class="inner" id="4">
+                        <div class="inner_contents" id="14">
+                        </div>
+                        <img class="inner_contents" id="24"/>
+                        <div class="inner_contents" id="34">
+                        </div>
+            </div>
+            <div class="inner" id="5">
+                        <div class="inner_contents" id="15">
+                        </div>
+                        <img class="inner_contents" id="25"/>
+                        <div class="inner_contents" id="35">
+                        </div>
+            </div>
+        </div>
+        <footer>Copyright &copy;Team Perl</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="javascript/weather.js"></script>
+    <script src="javascript/drawingcharts.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+.information{
+    float: left;
+    
+}
+.contents{
+    margin-left: 500px;
+    margin-top: -35px;
+}
+.alignments{
+    display: inline-flex;
+}
+.second-container{
+    margin-left: 90px;
+    margin-top: 25px;
+}
+footer {
+    background: #aaa;
+    color:white;
+    text-align: center;
+}
+ul{
+    list-style:none;
+}
+p{
+    font-size: 30px;
+}
+#chart-container{
+    height: 300px;
+    /* border: 1px solid green; */
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width:100%;
+}  
+.Temperature{
+    margin-left: 30px;
+}
+.bottom_division{
+	display:inline-flex;
+	border:1px solid red;
+	margin:auto;
+    position:relative;
+    width:100%;
+}
+.inner{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+.inner_contents{
+		border:1px solid green;
+        height:58px;
+        font-style: oblique;
+        font-weight: bold;
+}
+.inner:hover{
+    background-color: yellow;
+}
+.hide-result{
+    display: none;
+}
+.img{
+    margin:auto;
+}
